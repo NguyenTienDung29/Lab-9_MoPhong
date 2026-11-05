@@ -1,0 +1,10 @@
+[build]
+  # Website tĩnh nằm trong thư mục con, không cần lệnh build
+  publish = "Lab 9 MÔ PHỎNG"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
