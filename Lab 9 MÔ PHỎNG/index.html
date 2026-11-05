@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website mô phỏng chatbot AI tuyển sinh Trường Đại học ABC: ngành học, học phí, học bổng và phương thức xét tuyển.">
+  <meta name="theme-color" content="#102743">
+  <title>Tuyển sinh | Trường Đại học ABC</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#noi-dung" class="skip-link">Bỏ qua thanh điều hướng</a>
+
+  <div class="announcement">
+    <div class="container announcement__inner">
+      <span class="announcement__dot" aria-hidden="true"></span>
+      <span>Website mô phỏng phục vụ học phần Điện toán đám mây Microsoft Azure</span>
+      <span class="announcement__tag">Dữ liệu minh họa</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="dau-trang">
+    <div class="container header__inner">
+      <a href="#dau-trang" class="brand" aria-label="Trường Đại học ABC - Trang chủ">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 17L24 7l19 10-19 10L5 17Z" fill="currentColor"/>
+            <path d="M13 24v9c7 6 15 6 22 0v-9" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M43 17v14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__text"><strong>ĐẠI HỌC ABC</strong><small>Cổng thông tin tuyển sinh</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-label="Mở menu điều hướng" aria-controls="nav-links" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav-links" aria-label="Điều hướng chính">
+        <a href="#nganh-hoc">Ngành học</a>
+        <a href="#hoc-phi">Học phí</a>
+        <a href="#hoc-bong">Học bổng</a>
+        <a href="#xet-tuyen">Xét tuyển</a>
+        <button type="button" class="button button--nav" data-open-chat>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a8.5 8.5 0 0 1-8.5 8.5 8.8 8.8 0 0 1-3.4-.7L3 21l1.7-5.1a8.5 8.5 0 1 1 15.3-4.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          Hỏi chatbot
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="noi-dung">
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="eyebrow"><span class="eyebrow__spark" aria-hidden="true">✦</span> KHÁM PHÁ TƯƠNG LAI CÙNG ABC</div>
+          <h1>Tìm đúng ngành học.<br><span>Vững bước tương lai.</span></h1>
+          <p class="hero__lead">Một nơi để tìm hiểu ngành đào tạo, học phí, học bổng và phương thức xét tuyển. Trợ lý hỏi đáp mô phỏng luôn sẵn sàng giúp bạn bắt đầu.</p>
+          <div class="hero__actions">
+            <button class="button button--primary button--large" type="button" data-open-chat>
+              Tư vấn ngay <span aria-hidden="true">↗</span>
+            </button>
+            <a class="button button--outline button--large" href="#nganh-hoc">Khám phá ngành học <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero__highlights">
+            <div><span class="check-dot" aria-hidden="true">✓</span> Hỏi đáp 24/7*</div>
+            <div><span class="check-dot" aria-hidden="true">✓</span> Thông tin tập trung</div>
+            <div><span class="check-dot" aria-hidden="true">✓</span> Dễ sử dụng</div>
+          </div>
+          <p class="fineprint">* Khi website được triển khai trên dịch vụ lưu trữ hoạt động liên tục. Trợ lý hiện dùng câu trả lời mẫu, chưa kết nối AI thực tế.</p>
+        </div>
+
+        <div class="hero__visual" aria-label="Hình minh họa giao diện chatbot tuyển sinh">
+          <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+          <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+          <div class="hero__float hero__float--top" aria-hidden="true">✦ Khám phá cơ hội</div>
+          <div class="preview-card">
+            <div class="preview-card__top">
+              <span class="bot-avatar" aria-hidden="true">✦</span>
+              <div><strong>Trợ lý tuyển sinh ABC</strong><small><span class="online-dot"></span> Chế độ hỏi đáp mẫu</small></div>
+              <span class="preview-card__dots" aria-hidden="true">•••</span>
+            </div>
+            <div class="preview-card__messages">
+              <div class="bubble bubble--user">Em muốn tìm hiểu ngành Công nghệ thông tin ạ!</div>
+              <div class="bubble bubble--bot">Chào bạn! Ngành Công nghệ thông tin là một lựa chọn dành cho người yêu thích lập trình, hệ thống phần mềm và công nghệ. Bạn muốn xem học phí hay phương thức xét tuyển?</div>
+            </div>
+            <div class="preview-card__chips"><span>Ngành học</span><span>Học phí</span><span>Học bổng</span></div>
+            <button type="button" class="preview-card__input" data-open-chat aria-label="Mở chatbot để nhập câu hỏi">Nhập câu hỏi của bạn... <span aria-hidden="true">➤</span></button>
+          </div>
+          <div class="hero__float hero__float--bottom" aria-hidden="true"><span>✓</span> Dễ dàng tra cứu</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip" aria-label="Các nội dung hỗ trợ">
+      <div class="container feature-strip__grid">
+        <div><span class="feature-icon" aria-hidden="true">▦</span><span><strong>Ngành đào tạo</strong><small>Khám phá định hướng</small></span></div>
+        <div><span class="feature-icon" aria-hidden="true">₫</span><span><strong>Học phí</strong><small>Thông tin minh bạch</small></span></div>
+        <div><span class="feature-icon" aria-hidden="true">✧</span><span><strong>Học bổng</strong><small>Cơ hội hỗ trợ</small></span></div>
+        <div><span class="feature-icon" aria-hidden="true">✓</span><span><strong>Xét tuyển</strong><small>Các bước cần biết</small></span></div>
+      </div>
+    </section>
+
+    <section class="section" id="nganh-hoc">
+      <div class="container">
+        <div class="section-heading section-heading--split">
+          <div><p class="kicker">01 / NGÀNH ĐÀO TẠO</p><h2>Khám phá ngành học<br>phù hợp với bạn</h2></div>
+          <p>Tham khảo một số lĩnh vực đào tạo phổ biến. Danh sách dưới đây là nội dung minh họa của Trường Đại học ABC.</p>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="program-card__icon program-card__icon--blue" aria-hidden="true">&lt;/&gt;</div>
+            <span class="program-card__tag">Công nghệ</span>
+            <h3>Công nghệ thông tin</h3>
+            <p>Tìm hiểu lập trình, phát triển phần mềm, dữ liệu và hệ thống máy tính.</p>
+            <button type="button" data-question="Thông tin về ngành Công nghệ thông tin" class="text-button">Tìm hiểu thêm <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="program-card">
+            <div class="program-card__icon program-card__icon--green" aria-hidden="true">▥</div>
+            <span class="program-card__tag">Kinh tế</span>
+            <h3>Quản trị kinh doanh</h3>
+            <p>Khám phá quản lý doanh nghiệp, marketing, vận hành và lập kế hoạch kinh doanh.</p>
+            <button type="button" data-question="Thông tin về ngành Quản trị kinh doanh" class="text-button">Tìm hiểu thêm <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="program-card">
+            <div class="program-card__icon program-card__icon--orange" aria-hidden="true">✎</div>
+            <span class="program-card__tag">Sáng tạo</span>
+            <h3>Thiết kế đồ họa</h3>
+            <p>Rèn luyện tư duy thị giác, thiết kế thương hiệu và sáng tạo sản phẩm số.</p>
+            <button type="button" data-question="Thông tin về ngành Thiết kế đồ họa" class="text-button">Tìm hiểu thêm <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="program-card">
+            <div class="program-card__icon program-card__icon--violet" aria-hidden="true">Aa</div>
+            <span class="program-card__tag">Ngôn ngữ</span>
+            <h3>Ngôn ngữ Anh</h3>
+            <p>Phát triển kỹ năng ngoại ngữ, giao tiếp và kiến thức về ngôn ngữ – văn hóa.</p>
+            <button type="button" data-question="Thông tin về ngành Ngôn ngữ Anh" class="text-button">Tìm hiểu thêm <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tuition-section" id="hoc-phi">
+      <div class="container tuition-grid">
+        <div class="tuition-copy">
+          <p class="kicker kicker--light">02 / HỌC PHÍ</p>
+          <h2>Chủ động kế hoạch<br>tài chính học tập</h2>
+          <p>Học phí có thể khác nhau theo ngành, khóa học và chính sách từng năm. Chatbot giúp bạn biết cần xem những thông tin nào trước khi đăng ký.</p>
+          <button type="button" class="button button--white" data-question="Học phí của trường được tính như thế nào?">Hỏi về học phí <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="tuition-panel">
+          <div class="tuition-panel__header"><span class="tuition-panel__badge">CẨM NANG HỌC PHÍ</span><span aria-hidden="true">◈</span></div>
+          <h3>Những thông tin bạn nên kiểm tra</h3>
+          <ul class="tick-list">
+            <li>Mức học phí theo ngành và năm học</li>
+            <li>Cách tính theo tín chỉ hoặc học kỳ</li>
+            <li>Chính sách học bổng, miễn giảm</li>
+            <li>Thời hạn và phương thức thanh toán</li>
+          </ul>
+          <div class="tuition-panel__note"><strong>Lưu ý:</strong> Đây là dự án mô phỏng, chưa có bảng học phí chính thức. Không dùng nội dung mẫu làm căn cứ nộp phí.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scholarship-section" id="hoc-bong">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="kicker">03 / HỌC BỔNG</p>
+          <h2>Thêm cơ hội, thêm động lực</h2>
+          <p>Tìm hiểu các nhóm chính sách học bổng thường gặp. Điều kiện và mức hỗ trợ thực tế cần đối chiếu thông báo của nhà trường.</p>
+        </div>
+        <div class="scholarship-grid">
+          <article class="scholarship-card"><span class="scholarship-card__number">01</span><div class="scholarship-card__symbol" aria-hidden="true">✦</div><h3>Học bổng đầu vào</h3><p>Dành cho tân sinh viên có kết quả tuyển sinh tốt theo tiêu chí từng chương trình.</p><button type="button" data-question="Học bổng đầu vào có điều kiện gì?" class="text-button">Hỏi điều kiện <span aria-hidden="true">↗</span></button></article>
+          <article class="scholarship-card"><span class="scholarship-card__number">02</span><div class="scholarship-card__symbol" aria-hidden="true">★</div><h3>Học bổng thành tích</h3><p>Khuyến khích sinh viên có kết quả học tập và rèn luyện nổi bật.</p><button type="button" data-question="Học bổng thành tích là gì?" class="text-button">Tìm hiểu thêm <span aria-hidden="true">↗</span></button></article>
+          <article class="scholarship-card"><span class="scholarship-card__number">03</span><div class="scholarship-card__symbol" aria-hidden="true">♡</div><h3>Học bổng hỗ trợ</h3><p>Có thể áp dụng cho các nhóm sinh viên đủ điều kiện hỗ trợ theo chính sách.</p><button type="button" data-question="Có những học bổng hỗ trợ nào?" class="text-button">Tìm hiểu thêm <span aria-hidden="true">↗</span></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section admissions-section" id="xet-tuyen">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="kicker">04 / PHƯƠNG THỨC XÉT TUYỂN</p>
+          <h2>Từng bước đến giảng đường</h2>
+          <p>Quy trình tham khảo để chuẩn bị đăng ký. Phương thức và mốc thời gian áp dụng do nhà trường công bố theo từng năm.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step"><span class="step__number">01</span><h3>Chọn ngành yêu thích</h3><p>Tìm hiểu nội dung đào tạo và định hướng nghề nghiệp.</p></div>
+          <div class="step"><span class="step__number">02</span><h3>Xem phương thức</h3><p>Kiểm tra các hình thức xét tuyển và điều kiện liên quan.</p></div>
+          <div class="step"><span class="step__number">03</span><h3>Chuẩn bị hồ sơ</h3><p>Đối chiếu giấy tờ, thời hạn và hướng dẫn đăng ký.</p></div>
+          <div class="step"><span class="step__number">04</span><h3>Theo dõi kết quả</h3><p>Cập nhật thông báo và thực hiện thủ tục nhập học.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="cau-hoi-thuong-gap">
+      <div class="container faq-grid">
+        <div class="faq-heading"><p class="kicker">05 / HỎI ĐÁP NHANH</p><h2>Bạn còn băn khoăn?</h2><p>Những câu hỏi thường gặp sẽ giúp bạn bắt đầu. Nếu cần, hãy mở chatbot ở góc dưới màn hình.</p><button type="button" class="button button--primary" data-open-chat>Trò chuyện cùng chatbot <span aria-hidden="true">↗</span></button></div>
+        <div class="faq-list">
+          <details><summary>Chatbot có thể tư vấn những nội dung nào?<span aria-hidden="true">+</span></summary><p>Trợ lý demo hỗ trợ các chủ đề: ngành học, học phí, học bổng và phương thức xét tuyển. Nội dung trả lời là thông tin minh họa.</p></details>
+          <details><summary>Học phí của từng ngành có giống nhau không?<span aria-hidden="true">+</span></summary><p>Học phí có thể khác theo ngành, số tín chỉ và năm học. Để biết mức chính xác, cần dùng bảng học phí được trường công bố.</p></details>
+          <details><summary>Em cần chuẩn bị gì khi xét tuyển?<span aria-hidden="true">+</span></summary><p>Bạn nên kiểm tra phương thức xét tuyển, điều kiện, giấy tờ cần thiết và các mốc thời gian từ thông báo tuyển sinh chính thức.</p></details>
+          <details><summary>Chatbot này đã dùng Azure OpenAI chưa?<span aria-hidden="true">+</span></summary><p>Chưa. Đây là bản giao diện tĩnh và hệ thống hỏi đáp bằng JavaScript dùng cho bài thực hành Azure Static Web Apps. Muốn sử dụng AI thực tế cần bổ sung API backend và dịch vụ Azure AI.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="container final-cta" aria-label="Mở tư vấn tuyển sinh">
+      <div class="final-cta__content"><p>HỎI ĐÁP TUYỂN SINH • BẢN DEMO</p><h2>Hãy bắt đầu bằng<br>một câu hỏi.</h2><span>Thử hỏi về ngành học, học phí, học bổng hoặc xét tuyển.</span></div>
+      <button class="button button--white button--large" data-open-chat type="button">Mở chatbot ngay <span aria-hidden="true">↗</span></button>
+      <div class="final-cta__shape" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div><a href="#dau-trang" class="brand brand--footer"><span class="brand__mark" aria-hidden="true">✦</span><span class="brand__text"><strong>ĐẠI HỌC ABC</strong><small>Dự án mô phỏng tuyển sinh</small></span></a><p>Website được xây dựng để minh họa đề tài chatbot AI tuyển sinh trên Microsoft Azure.</p></div>
+      <div><h3>Khám phá</h3><a href="#nganh-hoc">Ngành học</a><a href="#hoc-phi">Học phí</a><a href="#hoc-bong">Học bổng</a><a href="#xet-tuyen">Phương thức xét tuyển</a></div>
+      <div><h3>Thông tin bài thực hành</h3><p>Học phần: Điện toán đám mây Microsoft Azure</p><p>Sinh viên: [Điền họ tên]</p><p>MSSV: [Điền MSSV]</p></div>
+    </div>
+    <div class="container footer__bottom"><span>© 2026 Đại học ABC — Website mô phỏng, không phải trang tuyển sinh chính thức.</span><a href="#dau-trang">Về đầu trang ↑</a></div>
+  </footer>
+
+  <!-- Widget chatbot mô phỏng: xử lý FAQ bằng JavaScript, không gửi dữ liệu ra máy chủ. -->
+  <button id="chat-launcher" class="chat-launcher" type="button" aria-controls="chat-panel" aria-expanded="false" aria-label="Mở trợ lý tuyển sinh">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.3a8.3 8.3 0 0 1-8.3 8.3c-1.3 0-2.5-.3-3.6-.8L3 20l1.4-5a8.3 8.3 0 1 1 15.6-3.7Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8 11h8M8 14h5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+    <span class="chat-launcher__label">Hỏi chatbot</span>
+  </button>
+
+  <section class="chat-panel" id="chat-panel" aria-label="Trợ lý tuyển sinh ABC" role="dialog" aria-modal="false" aria-hidden="true" hidden>
+    <header class="chat-panel__header">
+      <div class="chat-panel__avatar" aria-hidden="true">✦</div>
+      <div class="chat-panel__identity"><strong>Trợ lý tuyển sinh ABC</strong><span><span class="online-dot"></span> Demo hỏi đáp tự động</span></div>
+      <button class="chat-panel__close" id="chat-close" type="button" aria-label="Đóng chatbot">×</button>
+    </header>
+    <div class="chat-panel__disclaimer">Bản mô phỏng FAQ • Không phải tư vấn tuyển sinh chính thức.</div>
+    <div class="chat-panel__messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions text">
+      <div class="chat-message chat-message--bot"><span class="chat-message__avatar" aria-hidden="true">✦</span><div class="chat-message__bubble">Chào bạn! 👋 Mình là trợ lý tuyển sinh mẫu của Đại học ABC. Bạn muốn tìm hiểu về <strong>ngành học, học phí, học bổng</strong> hay <strong>phương thức xét tuyển</strong>?</div></div>
+    </div>
+    <div class="chat-panel__suggestions" id="chat-suggestions" aria-label="Câu hỏi gợi ý">
+      <button type="button" data-question="Trường có những ngành học nào?">Ngành học</button>
+      <button type="button" data-question="Học phí được tính như thế nào?">Học phí</button>
+      <button type="button" data-question="Có những loại học bổng nào?">Học bổng</button>
+      <button type="button" data-question="Các phương thức xét tuyển là gì?">Xét tuyển</button>
+    </div>
+    <form class="chat-panel__form" id="chat-form">
+      <label for="chat-input" class="sr-only">Nhập câu hỏi cho chatbot</label>
+      <input id="chat-input" name="question" type="text" maxlength="300" placeholder="Nhập câu hỏi của bạn..." autocomplete="off" required>
+      <button type="submit" aria-label="Gửi câu hỏi"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m4 12 16-8-5 16-3.5-7.5L4 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m11.5 12.5 4.5-4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </form>
+    <div class="chat-panel__footnote">Chưa kết nối Azure OpenAI • Dữ liệu trả lời minh họa</div>
+  </section>
+</body>
+</html>
