@@ -1,0 +1,10 @@
+[build]
+  # Mã nguồn website nằm trong thư mục con này
+  publish = "Lab 9 MÔ PHỎNG"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
